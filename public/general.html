@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        header {
+            position: relative;
+            background-color: black;
+            height: 75vh;
+            min-height: 25rem;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        header .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        @media (pointer: coarse) and (hover: none) {
+            header {
+                background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+            }
+
+            header video {
+                display: none;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="">
+        <div class="container navi">
+            <div class="row">
+                <div class="col-xl-1 col-lg-2 col-md-2"><img src="/Screenshot_1.jpg" width="90px" alt=""></div>
+                <div class="col-xl-2 col-lg-2 col-md-2  homeNavigation ">
+                    <p class="activeHomeNavigation">
+                        <a href="">
+                            ДЛЯ ДОМА
+                        </a>
+                    </p>
+                </div>
+                <div class="col-xl-5 col-lg-4 col-md-2 d-flex  align-self-center homeNavigation">
+                    <p>
+                        <a href="">
+                            ДЛЯ ОФИСА
+                        </a>
+                    </p>
+                    </a>
+                </div>
+                <img src="/41-417014_planet-earth-clipart-svg-planet-earth-svg-png.png" height="20px" class="mt-4"
+                    alt="">
+                <div class="col-xl-1 col-lg-1 col-md-2 d-flex smallTextAbout  align-self-center ">
+                    <p>
+                        Караганда
+                    </p>
+                </div>
+                <div class="col-xl-1 col-lg-1 col-md-2 mr-4  d-flex bolidText align-self-center ">
+                    <p>
+                        +77026229669
+                    </p>
+                </div>
+                <div class="col-xl-1 col-lg-1 col-md-1 d-flex bolidText align-self-center ">
+                    <p>войти</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row secondNav">
+                <div
+                    class="col-xl-1 col-lg-3 col-md-3 col-sm-4 col-4 d-flex justify-content-start active coroirateColorText">
+                    Уборка</div>
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-4 d-flex justify-content-center ">
+                    Химчистка</div>
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-4 d-flex justify-content-end ">
+                    Стирка и глажка</div>
+            </div>
+            <hr>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link active coroirateColorText" href="/idex.html">
+                                <p class=" "> Поддерживающая</p><span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link coroirateColorText" href="/windows.html">
+                                <p class=""> Окна</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link coroirateColorText" href="general.html">
+                                <p class="coroirateColorText"> Генеральная</p>
+                            </a>
+                        </li>
+                        <li class="nav-item coroirateColorText">
+                            <a class="nav-link coroirateColorText" href="/afterwork.html">
+                                <p class=""> После ремонт</p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link coroirateColorText" href="/home.html">
+                                <p class="">Загородные дома</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <hr>
+        </div>
+        <div class="container mt-5 pt-5 ">
+            <div class="row mb-5">
+                <div class="col-8">
+                    <h1 class="mediumText">Генеральная уборка <br> квартиры</h1>
+                </div>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <button class="nonBorderButton calculationButton">Рассчитать стоимость</button>
+                </div>
+            </div>
+            <div>
+                <img src="/unknown.png" alt="img">
+                <p class="text-right sm">В уборку входят все комнаты, включая кухню, ванную, коридор, балкон и
+                    гардеробную</p>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center align-items-center mt-5 mb-5 pandemicContainer">
+            <div class="row">
+                <div class="col-xl-2">
+                    <img src="/health-icon.svg" class="mr-3" alt="icon">
+                </div>
+                <div class="col-xl-10">
+                    <h4>Бесплатно обрабатываем все поверхности <br> антисептиком на время пандемии коронавируса</h4>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="text-center">Как делается генеральная уборка</h1>
+            <h5 class="text-center">В зависимости от загрязнённости квартиры к вам приедет команда клинеров или один
+                клинер</h5>
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/many-cleaners.svg" class="card-img-top  align-self-center" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Командой клинеров</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex">
+                                <img src="/chekMark.jpg" width="25px" height="25px" alt="" class="listImg mr-2">
+                                От 2 до 4 клинеров</li>
+                            <li class="list-group-item d-flex">
+                                <img src="/chekMark.jpg" width="25px" height="25px" alt="" class="listImg mr-2">
+                                Уборкой руководит менеджер</li>
+                            <li class="list-group-item d-flex">
+                                <img src="/chekMark.jpg" width="25px" height="25px" alt="" class="listImg mr-2">
+                                В уборку включено всё</li>
+                            <li class="list-group-item d-flex">
+                                <img src="/chekMark.jpg" width="25px" height="25px" alt="" class="listImg mr-2">
+                                Всё с собой, включая
+                                пылесос Kärcher и стремянку</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="button" class=" greenHref" data-toggle="modal"
+                                data-target=".bd-example-modal-lg"> полный список</button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <h1 class="text-center mt-5 mb-5">Что входит в уборку командой</h1>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h4 class="text-center">Во всей квартире клинеры должны</h4>
+                                                <ul>
+                                                    <li>Протереть все доступные поверхности, выключатели и дверные ручки
+                                                    </li>
+                                                    <li>Вымыть окна, зеркала и стеклянные поверхности</li>
+                                                    <li>Вымыть мебель изнутри и снаружи</li>
+                                                    <li>Обеспылить или протереть стены</li>
+                                                    <li>Вымыть люстры и светильники</li>
+                                                    <li>Вымыть пол, протереть плинтусы, пропылесосить ковёр</li>
+                                                    <li>Вынести мусор</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-6">
+                                                <h4 class="text-center">На кухне</h4>
+                                                <ul>
+                                                    <li>Вымыть весь кухонный фартук и раковину</li>
+                                                    <li>Вымыть плиту, духовку и холодильник</li>
+                                                    <li>Вымыть кухонную мебель изнутри и снаружи</li>
+                                                    <li>Вымыть посуду (любое количество в мойке)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h4 class="text-center">А что с вещами?</h4>
+                                                <ul>
+                                                    <li>Поменять постельное бельё и застелить кровать</li>
+                                                    <li>Аккуратно сложить одежду</li>
+                                                    <li>Расставить обувь</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-6">
+                                                <h4 class="text-center">В ванной и туалете</h4>
+                                                <ul>
+                                                    <li>Вымыть и продезинфицировать унитаз</li>
+                                                    <li>Вымыть ванную/душевую кабину</li>
+                                                    <li>Протереть шкафы с внешней стороны</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="bgCorparative">
+                                            <h2 class="text-center">Расчёт стоимости</h2>
+                                            <div class="container calculation mb-5 mt-5">
+                                                <div class="row justify-content-center">
+                                                    <div style="height: 50px;"
+                                                        class="col mb-5 d-flex justify-content-between calculationContainer">
+                                                        <div>
+                                                            <button class="nonBorderButton">-</button>
+                                                        </div>
+                                                        <span>1 комнатная</span>
+                                                        <div>
+                                                            <button class="nonBorderButton">+</button>
+                                                        </div>
+                                                    </div>
+                                                    <div style="height: 50px;"
+                                                        class="col mb-5  d-flex justify-content-between calculationContainer">
+                                                        <div>
+                                                            <button class="nonBorderButton">-</button>
+                                                        </div>
+                                                        <span>1 комнатная</span>
+                                                        <div>
+                                                            <button class="nonBorderButton">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="col ">
+                                                            <div>
+                                                                <button
+                                                                    class="nonBorderButton calculationButton">Рассчитать
+                                                                    стоимость</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <input type="tel" pattern=".{10}" class=" mb-3 form-control"
+                                                            id="validationCustom08" placeholder="+ 7 777 777 77"
+                                                            oninput="check(this)" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/one-cleaner.svg" class="card-img-top  align-self-center" width="150" height="138
+                        " alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Одним клинером</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex">
+                                <img src="/chekMark.jpg" width="25px" height="25px" alt="" class="listImg mr-2">
+                                <p class="listParagraph">1 клинер</p>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <img src="/chekMark.jpg" width="25px" height="25px" alt="" class="listImg mr-2">Уборка по регламенту</li>
+                            <li class="list-group-item d-flex">
+                                <img src="/chekMark.jpg" width="25px" height="25px" alt="" class="listImg mr-2">Есть платные доп. опции</li>
+                            <li class="list-group-item d-flex">
+                                <img src="/chekMark.jpg" width="25px" height="25px" alt="" class="listImg mr-2">С собой моющие средства и инвентарь (кроме пылесоса)</li>
+                        </ul>
+                        <div class="card-body">
+                            <button type="button" class=" greenHref" data-toggle="modal"
+                                data-target=".bd-example-modal-lg"> полный список</button>
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <h1 class="text-center mt-5 mb-5">Что входит в уборку командой</h1>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h4 class="text-center">Во всей квартире клинеры должны</h4>
+                                                <ul>
+                                                    <li>Протереть все доступные поверхности, выключатели и дверные ручки
+                                                    </li>
+                                                    <li>Вымыть окна, зеркала и стеклянные поверхности</li>
+                                                    <li>Вымыть мебель изнутри и снаружи</li>
+                                                    <li>Обеспылить или протереть стены</li>
+                                                    <li>Вымыть люстры и светильники</li>
+                                                    <li>Вымыть пол, протереть плинтусы, пропылесосить ковёр</li>
+                                                    <li>Вынести мусор</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-6">
+                                                <h4 class="text-center">На кухне</h4>
+                                                <ul>
+                                                    <li>Вымыть весь кухонный фартук и раковину</li>
+                                                    <li>Вымыть плиту, духовку и холодильник</li>
+                                                    <li>Вымыть кухонную мебель изнутри и снаружи</li>
+                                                    <li>Вымыть посуду (любое количество в мойке)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h4 class="text-center">А что с вещами?</h4>
+                                                <ul>
+                                                    <li>Поменять постельное бельё и застелить кровать</li>
+                                                    <li>Аккуратно сложить одежду</li>
+                                                    <li>Расставить обувь</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-6">
+                                                <h4 class="text-center">В ванной и туалете</h4>
+                                                <ul>
+                                                    <li>Вымыть и продезинфицировать унитаз</li>
+                                                    <li>Вымыть ванную/душевую кабину</li>
+                                                    <li>Протереть шкафы с внешней стороны</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="bgCorparative">
+                                            <h2 class="text-center">Расчёт стоимости</h2>
+                                            <div class="container calculation mb-5 mt-5">
+                                                <div class="row justify-content-center">
+                                                    <div style="height: 50px;"
+                                                        class="col mb-5 d-flex justify-content-between calculationContainer">
+                                                        <div>
+                                                            <button class="nonBorderButton">-</button>
+                                                        </div>
+                                                        <span>1 комнатная</span>
+                                                        <div>
+                                                            <button class="nonBorderButton">+</button>
+                                                        </div>
+                                                    </div>
+                                                    <div style="height: 50px;"
+                                                        class="col mb-5  d-flex justify-content-between calculationContainer">
+                                                        <div>
+                                                            <button class="nonBorderButton">-</button>
+                                                        </div>
+                                                        <span>1 комнатная</span>
+                                                        <div>
+                                                            <button class="nonBorderButton">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="col ">
+                                                            <div>
+                                                                <button
+                                                                    class="nonBorderButton calculationButton">Рассчитать
+                                                                    стоимость</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <input type="tel" pattern=".{10}" class=" mb-3 form-control"
+                                                            id="validationCustom08" placeholder="+ 7 777 777 77"
+                                                            oninput="check(this)" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <img src="/cf1ca83755fa6520ef0cd5fb48044517.jpg" width="900px" alt="img">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex flex-column  justify-content-center align-items-center">
+                    <h1>Обученная команда</h1>
+                    <p>Все клинеры BEE GROUP проходят обучение в учебном центре.
+                        Если к вам приедет команда, ей будет управлять менеджер. Менеджер оценивает длительность,
+                        проверяет качество и отвечает на все ваши вопросы. Вы можете оставить команду одну и принять
+                        работу у менеджера после уборки.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex flex-column  justify-content-center align-items-center">
+                    <h1>Специальное
+                        оборудование</h1>
+                    <p>Клинеры привозят с собой профессиональные чистящие средства, мопы и вёдра.
+                        Если к вам приедет команда, то она возьмет с собой мощный пылесос Kärcher, стремянку и
+                        парогенератор.</p>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <img src="/tool.jpg" width="400px" alt="img">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="text-center">Расчёт стоимости генеральной уборки</h1>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <p class="text-center greenBorderText text-center ">1</p>
+                <h4 class="text-center">Размер квартиры</h4>
+                <div class="container calculation mb-5 mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col  d-flex justify-content-between calculationContainer">
+                            <div>
+                                <button class="nonBorderButton">-</button>
+                            </div>
+                            <span>1 комнатная</span>
+                            <div>
+                                <button class="nonBorderButton">+</button>
+                            </div>
+                        </div>
+                        <div class="col  d-flex justify-content-between calculationContainer" style="height: 70px;">
+                            <div>
+                                <button class="nonBorderButton">-</button>
+                            </div>
+                            <span>1 комнатная</span>
+                            <div>
+                                <button class="nonBorderButton">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <p class="text-center greenBorderText text-center ">2</p>
+                <h4 class="text-center">Расскажите про сложности</h4>
+                <p class="text-center">При выборе любого из пунктов на уборку приедет команда</p>
+                <div style="width: 600px;">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend ">
+                            <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                            <p>Нужна уборка после ремонта</p>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3 ">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                            <p>Надо вымыть стены</p>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3 ">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                            <p>Нужно привезти пылесос</p>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3 ">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                            <p>Нужна химчистка мебели</p>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3 ">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                            <p>Нужно убраться в труднодоступных местах</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <p class="greenBorderText text-center ">3</p>
+                    <p class="text-center">Телефон для связи</p>
+                    <form>
+                        <div class="form-group  d-flex justify-content-center  ">
+                            <input style="width: 400px;" type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="+7779669622">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <div class="row mt-5">
+                <div class="col-6">
+                    Услуги
+                    <hr class="greenHr mt-3">
+                </div>
+                <div class="col-3">
+                    О сервесе
+                    <hr class="greenHr mt-3">
+                </div>
+                <div class="col-3">
+                    работа
+                    <hr class="greenHr mt-3">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col d-flex flex-column">
+                    <a href="">Поддерживающая уборка</a>
+                    <a href="">Генеральная уборка</a>
+                    <a href="">Мытьё окон</a>
+                    <a href="">После ремонта</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <a href="">Загородные дома</a>
+                    <a href="">Уборка офисов</a>
+                    <a href="">Химчистка</a>
+                    <a href="">Стирка и глажка</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <a href="">Контакты</a>
+                    <a href="">Вопросы</a>
+                    <a href="">Цены</a>
+                    <a href="">Отзывы</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <a href="">Стать клинером</a>
+                    <a href="">Вакансии</a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    Мы работаем в: Караганде, Нурсултане
+                </div>
+                <div class="col">
+                    Типы квартир:
+                    Однокомнатная двухкомнатная трёхкомнатная четырёхкомнатная
+                </div>
+                <div class="col">
+                    Условия использования Сервиса <br> Карта сайта
+                </div>
+            </div>
+            <hr class="mt-5">
+            <div class="row mt-2     ">
+                <div class="col">
+                    <img src="/923dd092ebf5d55e08be97063316e2c7.png" width="150px" alt="">
+                </div>
+                <div class="col">
+                    <img src="/1200px-Google_Play_symbol_2016.svg.png" width="90px" class="mt-4" alt="">
+                </div>
+                <div class="col">
+                    <img src="/1200px-Instagram_logo_2016.svg.webp" width="100px" class="mt-4" alt="">
+                </div>
+                <div class="col">
+                    <img src="/1024px-VK.com-logo.svg.png" width="100px" class="mt-4" alt="">
+                </div>
+                <div class="col">
+                    <img src="/1024px-F_icon.svg.png" width="100px" class="mt-4" alt="">
+                </div>
+            </div>
+            <div>
+                <p>
+                    Ответим на ваши вопросы
+                </p>
+            </div>
+            <div class=" row wrappermesangerButton d-flex justify-content-between mt-2">
+                <div class="col"><button class="mesangerButton">telega</button></div>
+                <div class="col"><button class=" mesangerButton">Messenger</button></div>
+                <div class="col"><button class=" mesangerButton">Vk</button></div>
+                <div class="col"><button class=" mesangerButton">Viber</button></div>
+            </div>
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> колобака.kz</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html> 

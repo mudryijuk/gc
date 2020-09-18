@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .custom-control-label:before{
+            background-color:rgb(255, 255, 255);
+        }
+        .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+            background-color:rgb(255, 198, 66);
+        }
+        .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+            background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='black' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+        }
+        .custom-control-input:active~.custom-control-label::before{
+            background-color:black;
+        }
+        /** focus shadow pinkish **/
+        .custom-checkbox .custom-control-input:focus~.custom-control-label::before{
+            box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgb(255, 166, 0); 
+        }
+    </style> 
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="">
+        <div class="container navi">
+            <div class="row">
+                <div class="col-xl-1 col-lg-2 col-md-2"><img src="/Screenshot_1.jpg" width="90px" alt=""></div>
+                <div class="col-xl-2 col-lg-2 col-md-2  homeNavigation ">
+                    <p class="activeHomeNavigation">
+                        <a href="">
+                            ДЛЯ ДОМА
+                        </a>
+                    </p>
+                </div>
+                <div class="col-xl-5 col-lg-4 col-md-2 d-flex  align-self-center homeNavigation">
+                    <p>
+                        <a href="">
+                            ДЛЯ ОФИСА
+                        </a>
+                    </p>
+                    </a>
+                </div>
+                <img src="/41-417014_planet-earth-clipart-svg-planet-earth-svg-png.png" height="20px" class="mt-4"
+                    alt="">
+                <div class="col-xl-1 col-lg-1 col-md-2 d-flex smallTextAbout  align-self-center ">
+                    <p>
+                        Караганда
+                    </p>
+                </div>
+                <div class="col-xl-1 col-lg-1 col-md-2 mr-4  d-flex bolidText align-self-center ">
+                    <p>
+                        +77026229669
+                    </p>
+                </div>
+                <div class="col-xl-1 col-lg-1 col-md-1 d-flex bolidText align-self-center ">
+                    <p>войти</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row secondNav">
+                <div
+                    class="col-xl-1 col-lg-3 col-md-3 col-sm-4 col-4 d-flex justify-content-start active coroirateColorText">
+                    Уборка</div>
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-4 d-flex justify-content-center ">
+                    Химчистка</div>
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-4 d-flex justify-content-end ">
+                    Стирка и глажка</div>
+            </div>
+            <hr>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link active coroirateColorText" href="/idex.html">
+                                <p class=" "> Поддерживающая</p><span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link coroirateColorText" href="/windows.html">
+                                <p class=""> Окна</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link coroirateColorText" href="general.html">
+                                <p class=""> Генеральная</p>
+                            </a>
+                        </li>
+                        <li class="nav-item coroirateColorText">
+                            <a class="nav-link coroirateColorText" href="/afterwork.html">
+                                <p class="coroirateColorText"> После ремонт</p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link coroirateColorText" href="/home.html">
+                                <p class="">Загородные дома</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <hr>
+        </div>
+        <div class="container-fluid bannerAfterworkWrapper">
+            <div class="container bannerAfterwork d-flex  justify-content-center align-self-center">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <h1 class="coroirateColorText megaText">Уборка
+                            после ремонта</h1>
+                        <p class="coroirateColorText">Поставим финальную точку в ремонте — очистим квартиру от строительной пыли и пятен.</p>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-self-center">
+                        <div class="wrapperForfastOrder">
+                            <h3 class="mb-5 ml-2">Расскажите о квартире</h3>
+                            <div class="wrapperForBottunToFastOrder  d-flex justify-content-between calculationContainer">
+                                <button class="nonBorderButton pl-5">-</button>
+                                <p class="pt-3">х-комнатная</p>
+                                <button class="nonBorderButton pr-5">+</button>
+                            </div>
+                            <input type="tel" pattern=".{10}" class=" mb-3 mt-4 form-control" id="validationCustom08"
+                                placeholder="Площядь квартиры" oninput="check(this)" required>
+                            <input type="tel" pattern=".{10}" class=" mb-3 form-control" id="validationCustom08"
+                                placeholder="+ 7 777 777 77" oninput="check(this)" required>
+                                <div class="custom-control form-control-lg custom-checkbox">  
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">  
+                                    <label class="custom-control-label" for="customCheck1">Есть мебель</label>  
+                                </div>
+                            <div class="custom-control form-control-lg custom-checkbox">  
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">  
+                                <label class="custom-control-label" for="customCheck2">Нужна чистка мебели</label>  
+                            </div>
+                            <div class="custom-control form-control-lg custom-checkbox">  
+                                <input type="checkbox" class="custom-control-input" id="customCheck3">  
+                                <label class="custom-control-label" for="customCheck3">Нужна чистка штор</label>  
+                            </div>
+                            <div class="container pt-4 d-flex justify-content-center align-self-center">
+                            <button class="nonBorderButton calculationButton">Расчитать стоимпость</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center align-items-center mt-5 mb-5 pandemicContainer">
+            <img src="/health-icon.svg" class="mr-3" alt="icon">
+            <h4>Бесплатно обрабатываем все поверхности <br> антисептиком на время пандемии коронавируса</h4>
+        </div>
+        <div class="container howItWorkAfterWork">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <img src="/after.jpg" width="609" alt="">
+                </div>
+                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 d-flex flex-column align-items-center justify-content-center ">
+                    <div class="container">
+                    <h1 class="mb-5 pb-5">Как это работает</h1>
+                    <h5>Мы рассчитываем стоимость уборки. Она совпадает почти всегда — очень  редко требуется чуть больше времени. Или справляемся быстрее.
+                        </h5>
+
+                        <h5> Мы присылаем к вам команду клинеров с наставником. Он распределит клинеров, будет контролировать их работу и отвечать на вопросы.</h5>
+                        
+                    <h5> После этого клинеры сразу приступают к делу. Вам не обязательно ходить за ними — в конце уборки вы примете работу у наставника.</h5>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="text-center mediumText mt-5 mb-5" >Преимущества Qlean</h1>
+            <div class="row mt-5    ">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <img src="/cf1ca83755fa6520ef0cd5fb48044517.jpg" width="900px" alt="img">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex flex-column  justify-content-center align-items-center">
+                    <h1>Обученная команда</h1>
+                    <p>Все клинеры BEE GROUP проходят обучение в учебном центре.
+                        Если к вам приедет команда, ей будет управлять менеджер. Менеджер оценивает длительность,
+                        проверяет качество и отвечает на все ваши вопросы. Вы можете оставить команду одну и принять
+                        работу у менеджера после уборки.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex flex-column  justify-content-center align-items-center">
+                    <h1>Специальное
+                        оборудование</h1>
+                    <p>Клинеры привозят с собой профессиональные чистящие средства, мопы и вёдра.
+                        Если к вам приедет команда, то она возьмет с собой мощный пылесос Kärcher, стремянку и
+                        парогенератор.</p>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <img src="/tool.jpg" width="400px" alt="img">
+                </div>
+            </div>
+        </div>
+        <div class="container orderNow">
+            <h1></h1>
+            <p></p>
+            <button></button>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <div class="row mt-5">
+                <div class="col-6">
+                    Услуги
+                    <hr class="greenHr mt-3">
+                </div>
+                <div class="col-3">
+                    О сервесе
+                    <hr class="greenHr mt-3">
+                </div>
+                <div class="col-3">
+                    работа
+                    <hr class="greenHr mt-3">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col d-flex flex-column">
+                    <a href="">Поддерживающая уборка</a>
+                    <a href="">Генеральная уборка</a>
+                    <a href="">Мытьё окон</a>
+                    <a href="">После ремонта</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <a href="">Загородные дома</a>
+                    <a href="">Уборка офисов</a>
+                    <a href="">Химчистка</a>
+                    <a href="">Стирка и глажка</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <a href="">Контакты</a>
+                    <a href="">Вопросы</a>
+                    <a href="">Цены</a>
+                    <a href="">Отзывы</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <a href="">Стать клинером</a>
+                    <a href="">Вакансии</a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    Мы работаем в: Караганде, Нурсултане
+                </div>
+                <div class="col">
+                    Типы квартир:
+                    Однокомнатная двухкомнатная трёхкомнатная четырёхкомнатная
+                </div>
+                <div class="col">
+                    Условия использования Сервиса <br> Карта сайта
+                </div>
+            </div>
+            <hr class="mt-5">
+            <div class="row mt-2     ">
+                <div class="col">
+                    <img src="/923dd092ebf5d55e08be97063316e2c7.png" width="150px" alt="">
+                </div>
+                <div class="col">
+                    <img src="/1200px-Google_Play_symbol_2016.svg.png" width="90px" class="mt-4" alt="">
+                </div>
+                <div class="col">
+                    <img src="/1200px-Instagram_logo_2016.svg.webp" width="100px" class="mt-4" alt="">
+                </div>
+                <div class="col">
+                    <img src="/1024px-VK.com-logo.svg.png" width="100px" class="mt-4" alt="">
+                </div>
+                <div class="col">
+                    <img src="/1024px-F_icon.svg.png" width="100px" class="mt-4" alt="">
+                </div>
+            </div>
+            <div>
+                <p>
+                    Ответим на ваши вопросы
+                </p>
+            </div>
+            <div class=" row wrappermesangerButton d-flex justify-content-between mt-2">
+                <div class="col"><button class="mesangerButton">telega</button></div>
+                <div class="col"><button class=" mesangerButton">Messenger</button></div>
+                <div class="col"><button class=" mesangerButton">Vk</button></div>
+                <div class="col"><button class=" mesangerButton">Viber</button></div>
+            </div>
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> колобака.kz</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

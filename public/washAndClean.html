@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        header {
+            position: relative;
+            background-color: black;
+            height: 75vh;
+            min-height: 25rem;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        header .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        @media (pointer: coarse) and (hover: none) {
+            header {
+                background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+            }
+
+            header video {
+                display: none;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="">
+        <div class="container navi">
+            <div class="row">
+                <div class="col"><img src="/Screenshot_1.jpg" width="90px" alt=""></div>
+                <div class="col-2  homeNavigation ">
+                    <p class="activeHomeNavigation">
+                        <a href="">
+                            ДЛЯ ДОМА
+                        </a>
+                    </p>
+                </div>
+                <div class="col-5 d-flex  align-self-center homeNavigation">
+                    <p>
+                        <a href="">
+                            ДЛЯ ОФИСА
+                        </a>
+                    </p>
+                    </a>
+                </div>
+                <img src="/41-417014_planet-earth-clipart-svg-planet-earth-svg-png.png" height="20px" class="mt-4"
+                    alt="">
+                <div class="col-1 d-flex smallTextAbout  align-self-center ">
+
+                    <p>
+                        Караганда
+                    </p>
+                </div>
+                <div class="col-1 mr-4 d-flex bolidText align-self-center ">
+                    <p>
+                        +77026229669
+                    </p>
+                </div>
+                <div class="col-1 d-flex bolidText align-self-center ">
+                    <p>войти</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row secondNav">
+                <div
+                    class="col-xl-1 col-lg-3 col-md-3 col-sm-4 col-4 d-flex justify-content-start active coroirateColorText">
+                    Уборка</div>
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-4 d-flex justify-content-center coroirateColorText">
+                    Химчистка</div>
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-4 d-flex justify-content-end coroirateColorText">
+                    Стирка и глажка</div>
+            </div>
+            <hr>
+            <hr>
+        </div>
+        <div class="container-fluid bannerWashAndClean">
+            <div class="container">
+                <div class="fastorderWash" style="width: 400px;">
+                    <div class="container">
+                    <h1>Стирка и глажка
+                        с доставкой</h1>
+                    <div class="row">
+                        <div class="col-8">
+                            <p>123</p>
+                        </div>
+                        <div class="col-4">
+                            123
+                        </div>
+                        
+                        </div>
+                        <p>Бесплатная доставка от 14590 т.</p>
+                        <p>В остальных случаях — 3500 т.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid washAdwentage">
+            <div class="container  washAdwentageWrapper">
+                <div class="row">
+                <div class="col washAdwentageItem">
+                    <img src="" alt=""img class="washAdwentageimg">
+                    <p class="washAdwentagetext">Закажите онлайн</p>
+                    <p class="washAdwentageSmallText">Выберите, в какое время приехать курьеру</p>
+                </div>
+                <div class="col washAdwentageItem">
+                    <img src="" alt="img" class="washAdwentageimg">
+                    <p class="washAdwentagetext">Отдайте вещи</p>
+                    <p class="washAdwentageSmallText">Их отвезут туда, где стирают профессионалы</p>
+                </div>
+                <div class="col washAdwentageItem">
+                    <img src="" alt="img" class="washAdwentageimg">
+                    <p class="washAdwentagetext">Вернем послезавтра</p>
+                    <p class="washAdwentageSmallText">Курьер позвонит за 30 минут до доставки</p>
+                </div>
+                <div class="col washAdwentageItem">
+                    <img src="" alt="img" class="washAdwentageimg">
+                    <p class="washAdwentagetext">Есть страховка</p>
+                    <p class="washAdwentageSmallText">Оплатим или починим, если вещь повредится</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid aboutMobile">
+            <div class="container aboutMobilewrapper">
+                <h1>Мы подготавливаем для вас мобильное прложение </h1>
+                <h3>В мобильном приложении
+                    гораздо удобнее</h3>
+                    <ul>
+                        <li>Создавать и управлять заказами</li>
+                        <li>Привязывать платежные карты и создавать адреса</li>
+                        <li>Следить за новостями и акциями</li>
+                    </ul>
+                    <div class="row">
+                        <div class="col">
+                            <button>Уведомить в сообщени  о приложении</button>
+                        </div>
+                        <div class="col">
+                            <button><img src="" alt="alpple"></button>
+                        </div>
+                        <div class="col">
+                            <img src="" alt="google">
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="container WashSubscription">
+            <h1>Стирка по подписке</h1>
+            <p>Для тех, кто знает толк в выгоде</p>
+            <div class="row">
+                <div class="col">
+                    <h4>20 килограммов или рубашек</h4>
+                    <div>
+                        <img src="" alt="icon">
+                        <p>выгода до 5000 т. + скидка на 30% всю химчистку</p>
+                    </div>
+                    <div>
+                        <img src="" alt="icon">
+                        <p>2 бесплатные доставки в месяц</p>
+                    </div>
+                    <div>
+                        <img src="" alt="icon">
+                        <p>Рубашки и килограммы можно миксовать. Оптимально для одного-двух человек на месяц</p>
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <button> Химчиска для подписок дешевле</button>
+        </div>
+        <div class="container specialOffer">
+            <h1>Спецпредложения на стирку</h1>
+            <h4>В любой момент могут закончиться — успейте заказать</h4>
+            <div class="row specialOfferwraper">
+                <div class="col specialOfferItem">
+                    <h3>Сезонная скидка на верхнюю одежду</h3>
+                    <p> 1 бесплатная доставка от 12 000 тен.</p>
+                    <p> МОжно использовать 1 раз</p>
+                    <p>действует до 1 сентября 2020</p>
+                </div>
+            </div>
+        </div>
+        <div class="container wharAboutClean">
+            <div class="row">
+                <div class="col containerCleanButton">
+                    <button class="cleanFlatButton cleanFlatButtonActive">Рубашки</button>
+                </div>
+                <div class="col containerCleanButton">
+                    <button class="cleanFlatButton">Вещи</button>
+                </div>
+                <div class="col containerCleanButton">
+                    <button class="cleanFlatButton">Химчистка</button>
+                </div>
+            </div>
+            <div class="wharAboutCleanIcon">
+                <div class="row wharAboutCleanIconWrapper">
+                    <div class="col  wharAboutCleanIconItem">
+                        <img src="" alt="" class="wharAboutCleanIconImg">
+                        <p>Химчистку можно добавить к любому заказу</p>
+                    </div>
+                    <div class="col  wharAboutCleanIconItem">
+                        <img src="" alt="" class="wharAboutCleanIconImg">
+                        <p>Глажка включена в стоимость</p>
+                    </div><div class="col  wharAboutCleanIconItem">
+                        <img src="" alt="" class="wharAboutCleanIconImg">
+                        <p>Бесплатная доставка заказа от 15 000 теньге</p>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <div class="row wharAboutCleanIconWrapper">
+                    <div class="col  wharAboutCleanIconItem">
+                        <img src="" alt="" class="wharAboutCleanIconImg">
+                        <p>Химчистку можно добавить к любому заказу</p>
+                    </div>
+                    <div class="col  wharAboutCleanIconItem">
+                        <img src="" alt="" class="wharAboutCleanIconImg">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="col  wharAboutCleanIconItem">
+                        <img src="" alt="" class="wharAboutCleanIconImg">
+                        <p>Ежедневная доставка с 8:00 до 23:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container faqCleanWindow">
+            <div class="row d-flex">
+                <div class="col">
+                    1
+                </div>
+                <div class="col">
+                    2
+                </div>
+                <div class="col">
+                    3
+                </div>
+            </div>
+            <h1 class="text-center">Часто задаваемые вопросы</h1>
+            <div class="accordion mt-5 pt-5" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Collapsible Group Item #1
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Collapsible Group Item #2
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Collapsible Group Item #3
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center ">
+                <button class="text-cenetr greenHref mt-5">Все вопросы</button>
+            </div>
+        </div>
+        <div class="container orderNow">
+            <h1></h1>
+            <p></p>
+            <button></button>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <div class="row mt-5">
+                <div class="col-6">
+                    Услуги
+                    <hr class="greenHr mt-3">
+                </div>
+                <div class="col-3">
+                    О сервесе
+                    <hr class="greenHr mt-3">
+                </div>
+                <div class="col-3">
+                    работа
+                    <hr class="greenHr mt-3">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col d-flex flex-column">
+                    <a href="">Поддерживающая уборка</a>
+                    <a href="">Генеральная уборка</a>
+                    <a href="">Мытьё окон</a>
+                    <a href="">После ремонта</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <a href="">Загородные дома</a>
+                    <a href="">Уборка офисов</a>
+                    <a href="">Химчистка</a>
+                    <a href="">Стирка и глажка</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <a href="">Контакты</a>
+                    <a href="">Вопросы</a>
+                    <a href="">Цены</a>
+                    <a href="">Отзывы</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <a href="">Стать клинером</a>
+                    <a href="">Вакансии</a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    Мы работаем в: Караганде, Нурсултане
+                </div>
+                <div class="col">
+                    Типы квартир:
+                    Однокомнатная двухкомнатная трёхкомнатная четырёхкомнатная
+                </div>
+                <div class="col">
+                    Условия использования Сервиса <br> Карта сайта
+                </div>
+            </div>
+            <hr class="mt-5">
+            <div class="row mt-2     ">
+                <div class="col">
+                    <img src="/923dd092ebf5d55e08be97063316e2c7.png" width="150px" alt="">
+                </div>
+                <div class="col">
+                    <img src="/1200px-Google_Play_symbol_2016.svg.png" width="90px" class="mt-4" alt="">
+                </div>
+                <div class="col">
+                    <img src="/1200px-Instagram_logo_2016.svg.webp" width="100px" class="mt-4" alt="">
+                </div>
+                <div class="col">
+                    <img src="/1024px-VK.com-logo.svg.png" width="100px" class="mt-4" alt="">
+                </div>
+                <div class="col">
+                    <img src="/1024px-F_icon.svg.png" width="100px" class="mt-4" alt="">
+                </div>
+            </div>
+            <div>
+                <p>
+                    Ответим на ваши вопросы
+                </p>
+            </div>
+            <div class=" row wrappermesangerButton d-flex justify-content-between mt-2">
+                <div class="col"><button class="mesangerButton">telega</button></div>
+                <div class="col"><button class=" mesangerButton">Messenger</button></div>
+                <div class="col"><button class=" mesangerButton">Vk</button></div>
+                <div class="col"><button class=" mesangerButton">Viber</button></div>
+            </div>
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> колобака.kz</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
